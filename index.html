@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular scope.$appy Play</title>
+
+    <!-- Bootstrap -->
+    <link href="angular1.3-bootstrap3.2/bootstrap-twit/css/bootstrap.min.css" rel="stylesheet">
+    <link href="angular1.3-bootstrap3.2/bootstrap-twit/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+
+      <h1 class="text-primary">To watch or not to watch</h1><hr/>
+
+    
+      <h5>This counter is not being watched by Angular even though its incrementing behind the scenes</h5>
+      <watched-false></watched-false>
+
+
+      <h5>This counter is being watched via the $appy function, so Angular updates the incrementing thats taking place behind the scenes</h5>
+      <watched-true></watched-true>
+
+    </div>
+
+   
+   <script src="angular1.3-bootstrap3.2/angular.min.js"></script>
+   <script src="app.js"></script>
+  </body>
+</html>
