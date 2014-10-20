@@ -4,7 +4,7 @@ var app = angular.module('app', [])
 app.directive('watchedFalse', function(){
 	return{
 		restrict: 'E', 
-		template: '<button class="btn btn-success">I was clicked {{counter1}} times</button>',
+		template: 'Not watched: <button class="btn btn-success">I was clicked {{counter1}} times</button>',
 		controller: function($scope){
 			$scope.counter1 = 0;
 		},
@@ -22,7 +22,7 @@ app.directive('watchedFalse', function(){
 app.directive('watchedTrue', function(){
 	return{
 		restrict: 'E', 
-		template: '<button class="btn btn-primary">I was clicked {{counter2}} times</button>',
+		template: 'Watched: <button class="btn btn-primary">I was clicked {{counter2}} times</button>',
 		controller: function($scope){
 			$scope.counter2 = 0;
 		},
